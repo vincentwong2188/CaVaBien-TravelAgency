@@ -1,0 +1,1388 @@
+<title>Packages | Ça Va Bien Travel Agency</title>
+
+<html>
+
+<head>
+    <link rel="icon" type="image/gif/png" href="cvblogo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="ca va bien.css" />
+
+
+</head>
+
+<body>
+    <!-- navbar goes here -->
+    <div class="navbar">
+
+        <a class="logo" href="http://localhost:3000/home"><img src="cvblogo.png" style="width:80%"></a>
+
+
+        <a href="http://localhost:3000/hotels">Hotels</a>
+        <a href="http://localhost:3000/flights">Flights</a>
+
+        <div class="dropdown">
+            <a href="http://localhost:3000/packages">Packages</a>
+
+            <button class="dropbtn">
+                <i class="fa fa-caret-down"></i>
+            </button>
+           <div class="dropdown-content">
+              <a href="http://localhost:3000/packages#bestseller">Best Seller</a>
+              <a href="http://localhost:3000/packages#family">Family Friendly</a>
+                <a href="http://localhost:3000/packages#highadrenaline">High Adrenaline</a>
+                <a href="http://localhost:3000/packages#relaxed">Relaxed</a>
+                <a href="http://localhost:3000/packages#romantic">Romantic</a>
+              <a href="http://localhost:3000/packages#wilderness">Wilderness</a>
+              <a href="http://localhost:3000/packages#business">Business</a>
+            </div>
+
+        </div>
+
+        <div class="navbar-right">
+            <a href="http://localhost:3000/aboutus">About</a>
+            <div class="dropdown">
+                <a href="http://localhost:3000/contactus">Contact Us</a>
+                <button class="dropbtn">
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="http://localhost:3000/contactus">Locate Us</a>
+                    <a href="mailto:customersupport@ÇaVaBien.net?Subject=Customer%20Query" target="_top">Email Us</a>
+                    <a href="tel:+1-817-562-8591">Call Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar ends here -->
+
+    <br><br />
+    <div class="wallpaper-container">
+        <img class="wallpaper" src="wallpaper.jpg" style="width:100%">
+        <div class="centered">
+            <h2><b>Packages</b></h2>
+            Home &#8594 Packages<br />
+        </div>
+
+    </div>
+    <br> <br>
+
+
+      <!-- our search bar begins here -->
+      <center>
+        <div class="searchbar">
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Flight')" id="defaultOpen">Flights</button>
+            <button class="tablinks" onclick="openCity(event, 'Hotel')">Hotels</button>
+            <button class="tablinks" onclick="openCity(event, 'Packages')">Packages</button>
+          </div>
+
+          <div id="Flight" class="tabcontent">
+
+            <!-- Search Bar for "Flights"-->
+            <div class="search-container">
+              From <br>
+                <form action="http://localhost:3000/flightsbooking" method="get">
+
+                   <select name="startlocation">
+                    <option value="NIL">Select a location</option>
+                    <option value="SYDNEY">Sydney</option>
+                    <option value="CHICAGO">Chicago</option>
+                    <option value="SINGAPORE">Singapore</option>
+                    <option value="NEW YORK">New York</option>
+                    <option value="PARIS">Paris</option>
+                    <option value="LOS ANGELES">Los Angeles</option>
+                    <option value="TORONTO">Toronto</option>
+                    <option value="HONG KONG">Hong Kong</option>
+                    <option value="DUBAI">Dubai</option>
+                    <option value="BANGKOK">Bangkok</option>
+                    <option value="ROME">Rome</option>
+                    <option value="INCHEON">Incheon</option>
+                    <option value="TAIPEI">Taipei</option>
+                    <option value="BEIJING">Beijing</option>
+                    <option value="SHANGHAI">Shanghai</option>
+                    <option value="TOKYO">Tokyo</option>
+                    <option value="FRANKFURT">Frankfurt</option>
+                    <option value="MOSCOW">Moscow</option>
+                    
+
+
+                  </select>
+
+                  <br>
+
+
+                    <br>
+                      To<br>
+
+                        <input type="text" value="LONDON" name="endlocation">
+
+                          <br>
+                            <br>
+
+                              Start Date<br>
+
+                                <input type="date" placeholder="Search.." name="startdate">
+
+
+                                  <br>
+                                    <br>
+
+                                      Return Date <br>
+
+                                        <input type="date" placeholder="Search.." name="enddate">
+
+
+
+                                          <br />
+                                          <br>
+
+                                            <input class="searchnow" type="submit">
+                                        </form>
+
+              </div>
+
+          </div>
+
+
+
+          <div id="Hotel" class="tabcontent">
+
+            <div class="search-container">
+
+
+              Where would you like to stay in London? <Br>
+                <form action="/hotelsbooking" method="get">
+                  <select name="londonplaces">
+                    <option value="NIL">Select a location</option>
+                    <option value="Euston Square">Euston Square</option>
+                    <option value="Gloucester Road">Gloucester Road</option>
+                    <option value="High Street Kensington">High Street Kensington</option>
+                    <option value="King's Cross St Pancras">King's Cross St Pancras</option>
+                    <option value="Oxford Circus">Oxford Circus</option>
+                    <option value="Piccadilly Circus">Piccadilly Circus</option>
+                    <option value="Tottenham Court Road">Tottenham Court Road</option>
+                    <option value="Victoria">Victoria</option>
+                    <option value="Waterloo">Waterloo</option>
+                    <option value="Westminster">Westminster</option>
+
+                  </select>
+
+
+
+                  <br>
+                    <br>
+                      Check-In Date <br>
+
+                        <input type="date" placeholder="Search.." name="startdate">
+
+                          <br>
+                            <br>
+                              Check-Out Date <br>
+
+                                <input type="date" placeholder="Search.." name="enddate">
+
+                                  <br>
+                                    <br>
+                                      <input class="searchnow" type="submit">
+                         </form>
+              </div>
+          </div>
+
+          <div id="Packages" class="tabcontent">
+
+            <div class="search-container">
+              When would you like to travel? <br>
+                <form action="/packagesbooking" method="get">
+                  <select name="travelmonth">
+                    <option value="NIL">Select a month</option>
+                    <option value="June 2018">June 2018</option>
+                    <option value="July 2018">July 2018</option>
+                    <option value="August 2018">August 2018</option>
+                    <option value="September 2018">September 2018</option>
+                    <option value="November 2018">November 2018</option>
+                    <option value="December 2018">December 2018</option>
+                    <option value="January 2019">January 2019</option>
+
+
+                  </select>
+
+                  <br>
+                    <br />
+                    <input class="searchnow" type="submit">
+                           </form>
+              </div>
+
+          </div>
+
+          <script>
+
+
+            function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+
+                document.getElementById("defaultOpen").click();
+          </script>
+
+        </div>
+      </center>
+      <!-- our search bar ends here -->
+        
+    <br> <br>
+
+
+    <!-- start of Packages Polaroids -->
+
+    <div class="row">
+
+        <a href="#bestseller">
+            <div class="polaroid-center">
+                <img src="bestseller.jpg" alt="Best Seller" style="width:100%">
+
+                <div class="container">
+                    <p><b>Best Seller</b></p>
+                    Most Popular Among our Customers!<br />
+                    <br /><hr />
+
+                    <p style="text-align:left;">
+                        Duration
+                        <span style="float:right;">05 Days 04 Nights</span>
+                    </p>
+                    <hr />
+
+                    <p style="text-align:left;">
+                        Date
+                        <span style="float:right;">10 July 2018</span>
+                    </p>
+                    <hr />
+                    <p style="text-align:left;">
+                        Includes
+                        <span style="float:right;"><i title="Meals" class="material-icons">&#xe56c;</i> <i title="Accommodation" class="material-icons">&#xe53a;</i> <i title="Transportation" class="material-icons">&#xe530;</i></span>
+                    </p>
+                    <hr />
+                    <p style="text-align:left;">
+                        Price
+                        <span style="float:right;">&#163;83</span>
+                    </p>
+
+
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+
+    <div class="row">
+
+        <a href="#family">
+            <div class="polaroid">
+                <img src="5.jpg" alt="Family Friendly" style="width:100%">
+                <div class="container">
+                    <p><b>Family Friendly Package</b></p>
+                    Fit for Families of Sizes 3-6<br />
+                    <br /><hr />
+
+                    <p style="text-align:left;">
+                        Duration
+                        <span style="float:right;">05 Days 04 Nights</span>
+                    </p>
+                    <hr />
+
+                    <p style="text-align:left;">
+                        Date
+                        <span style="float:right;">27 July 2018</span>
+                    </p>
+                    <hr />
+                    <p style="text-align:left;">
+                        Includes
+                        <span style="float:right;"><i title="Meals" class="material-icons">&#xe56c;</i> <i title="Accommodation" class="material-icons">&#xe53a;</i> <i title="Transportation" class="material-icons">&#xe530;</i></span>
+                    </p>
+                    <hr />
+                    <p style="text-align:left;">
+                        Price
+                        <span style="float:right;">&#163;132</span>
+                    </p>
+
+
+                </div>
+            </div>
+        </a>
+
+
+        <a href="#highadrenaline">
+            <div class="polaroid">
+                <img src="6.jpg" alt="High Adrenaline" style="width:100%">
+                <div class="container">
+                    <p><b>High Adrenaline Package</b></p>
+                    For those full of energy! <br />
+                    <br /><hr />
+
+                    <p style="text-align:left;">
+                        Duration
+                        <span style="float:right;">05 Days 04 Nights</span>
+                    </p>
+                    <hr />
+
+                    <p style="text-align:left;">
+                        Date
+                        <span style="float:right;">18 July 2018</span>
+                    </p>
+                    <hr />
+                    <p style="text-align:left;">
+                        Includes
+                        <span style="float:right;"><i title="Meals" class="material-icons">&#xe56c;</i> <i title="Accommodation" class="material-icons">&#xe53a;</i> <i title="Transportation" class="material-icons">&#xe530;</i></span>
+                    </p>
+                    <hr />
+                    <p style="text-align:left;">
+                        Price
+                        <span style="float:right;">&#163;130</span>
+                    </p>
+
+
+                </div>
+            </div>
+        </a>
+
+        <a href="#relaxed">
+            <div class="polaroid">
+                <img src="8.jpg" alt="Relaxed" style="width:100%">
+                <div class="container">
+                    <p><b>Relaxed Package</b></p>
+                    Take a break and relax in London.<br />
+                    <br /><hr />
+
+                    <p style="text-align:left;">
+                        Duration
+                        <span style="float:right;">04 Days 03 Nights</span>
+                    </p>
+                    <hr />
+
+                    <p style="text-align:left;">
+                        Date
+                        <span style="float:right;">5 July 2018</span>
+                    </p>
+                    <hr />
+                    <p style="text-align:left;">
+                        Includes
+                        <span style="float:right;"><i title="Meals" class="material-icons">&#xe56c;</i> <i title="Accommodation" class="material-icons">&#xe53a;</i> <i title="Transportation" class="material-icons">&#xe530;</i></span>
+                    </p>
+                    <hr />
+                    <p style="text-align:left;">
+                        Price
+                        <span style="float:right;">&#163;110</span>
+                    </p>
+
+
+                </div>
+            </div>
+        </a>
+
+
+    </div>
+
+    <!-- new row -->
+
+    <div class="row">
+
+        <a href="#romantic">
+            <div class="polaroid">
+                <img src="romantic.jpg" alt="Romantic" style="width:100%">
+                <div class="container">
+                    <p><b>Romantic Package</b></p>
+                    The best romantic stays here in London!<br />
+                    <br /><hr />
+
+                    <p style="text-align:left;">
+                        Duration
+                        <span style="float:right;">05 Days 04 Nights</span>
+                    </p>
+                    <hr />
+
+                    <p style="text-align:left;">
+                        Date
+                        <span style="float:right;">19 July 2018</span>
+                    </p>
+                    <hr />
+                    <p style="text-align:left;">
+                        Includes
+                        <span style="float:right;"><i title="Meals" class="material-icons">&#xe56c;</i> <i title="Accommodation" class="material-icons">&#xe53a;</i> <i title="Transportation" class="material-icons">&#xe530;</i></span>
+                    </p>
+                    <hr />
+                    <p style="text-align:left;">
+                        Price
+                        <span style="float:right;">&#163;248</span>
+                    </p>
+
+
+                </div>
+            </div>
+        </a>
+
+        <a href="#wilderness">
+            <div class="polaroid">
+                <img src="nature.jpg" alt="Wilderness" style="width:100%">
+                <div class="container">
+                    <p><b>Wilderness Package</b></p>
+                    For those who love the green!<br />
+                    <br /><hr />
+
+                    <p style="text-align:left;">
+                        Duration
+                        <span style="float:right;">05 Days 04 Nights</span>
+                    </p>
+                    <hr />
+
+                    <p style="text-align:left;">
+                        Date
+                        <span style="float:right;">1 July 2018</span>
+                    </p>
+                    <hr />
+                    <p style="text-align:left;">
+                        Includes
+                        <span style="float:right;"><i title="Meals" class="material-icons">&#xe56c;</i> <i title="Accommodation" class="material-icons">&#xe53a;</i> <i title="Transportation" class="material-icons">&#xe530;</i></span>
+                    </p>
+                    <hr />
+                    <p style="text-align:left;">
+                        Price
+                        <span style="float:right;">&#163;180</span>
+                    </p>
+
+
+                </div>
+            </div>
+        </a>
+
+
+        <a href="#business">
+            <div class="polaroid">
+                <img src="business.jpg" alt="Business" style="width:100%">
+                <div class="container">
+                    <p><b>Business Package</b></p>
+                    For the workaholic.<br />
+                    <br /><hr />
+
+                    <p style="text-align:left;">
+                        Duration
+                        <span style="float:right;">05 Days 04 Nights</span>
+                    </p>
+                    <hr />
+
+                    <p style="text-align:left;">
+                        Date
+                        <span style="float:right;">15 July 2018</span>
+                    </p>
+                    <hr />
+                    <p style="text-align:left;">
+                        Includes
+                        <span style="float:right;">
+                          <i title="Rooms and Suites" class="material-icons">&#xe53a;</i>
+                          <i title="Breakfast" class="material-icons">&#xeb44;</i>
+                          <i title="Dinner" class="material-icons">&#xe56c;</i>
+                          <i title="Meeting Room" class="material-icons">&#xe8f9;</i>
+                          <i title="Spa" class="material-icons">&#xeb4c;</i>
+                        </span>
+                    </p>
+                    <hr />
+                    <p style="text-align:left;">
+                        Price
+                        <span style="float:right;">&#163;300</span>
+                    </p>
+
+
+                </div>
+            </div>
+        </a>
+
+
+    </div>
+
+
+    <!--- END of Polaroids -->
+
+
+    <a name="bestseller"></a>
+    <br><hr /> <br>
+  
+    
+    
+    <!-- TIME LINE starts here -->
+    <center>
+
+        <h1 class="timeline-text-outside">Best Seller</h1>
+        <p class="timeline-text-outside">
+            Want to experience every aspect of London? This package allows you to visit all the spectacular tourist attractions including the Big Ben, London Eye and Buckingham Palace, St Paul’s Cathedral all in the same day. And what can beat taking a boat ride on River Thames to end this perfect day!
+        </p>
+    </center>
+
+
+    <div class="timeline">
+        <div class="bubble left">
+            <div class="content">
+                <img src="bigben.jpg" alt="Big Ben" style="width:100%">
+
+                <h2>Day 1: Big Ben</h2>
+                <p>Big Ben Standing high above the Palace of Westminster in London, the clock tower commonly known as Big Ben is one of the most recognizable British icons.  </p>
+            </div>
+        </div>
+
+        <div class="bubble right">
+            <div class="content">
+                <img src="bestsellerhotel.jpg" alt="London Elizabeth Hotel" style="width:100%">
+
+                <h2>Night 1: London Elizabeth Hotel</h2>
+                <p>
+                    Check-in to the London Elizabeth Hotel.<br /><br />
+                    <b>Address:</b> Lancaster Terrace, Hyde Park, W23PF,UK<br />
+                    <b>Phone:</b> +98 65 5555 1511<br />
+                    <b>Price:</b> £181 per night<br />
+
+                </p>
+            </div>
+        </div>
+
+        <div class="bubble left">
+            <div class="content">
+                <img src="londoneye.jpg" alt="London Eye" style="width:100%">
+
+                <h2>Day 2: London Eye</h2>
+                <p>
+                    135 meters tall & includes entry to London Eye 4D Film Experience (£23), a trip to the London Eye will allow you to witness spectacular sights in London such as the Tower Bridge, The Shard, and the breathtaking River Thames.
+                </p>
+            </div>
+        </div>
+        <div class="bubble right">
+            <div class="content">
+                <img src="buckinghampalace.jpg" alt="Buckingham Palace" style="width:100%">
+                <h2>Day 3: Buckingham Palace</h2>
+                <p>Buckingham Palace is the London residence and administrative headquarters of the monarch of the United Kingdom.</p>
+            </div>
+        </div>
+        <div class="bubble left">
+            <div class="content">
+                <img src="riverthames.jpg" alt="River Thames" style="width:100%">
+
+                <h2>Day 4: River Thames</h2>
+                <p>
+                    The River Thames is a river that flows through southern England, most notably through London.
+                </p>
+            </div>
+        </div>
+        <div class="bubble right">
+            <div class="content">
+                <img src="cathedral.jpg" alt="Cathedral" style="width:100%">
+
+                <h2>Day 5: St Paul’s Cathedral</h2>
+                <p>
+                    Enter the iconic and breathtaking St Paul’s Cathedral to explore the beauty and history that lies inside. An impressive three hundred years old, this iconic landmark designed by Sir Christopher Wren is an unmissable visit.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <center>
+        <br /><br /><a href="#nil"><button class="purchasenow" type="button">Purchase Now</button></a>
+    </center>
+
+
+    <!-- BOOKMARK-->
+    <a name="romantic"></a>
+    <br><hr /> <br>
+
+    <center>
+        <h1 class="timeline-text-outside">Romantic</h1>
+        <p class="timeline-text-outside">
+            London is one of the most romantic cities in the world. Encapsulate your lover with the best memory in London. Watch the sunrise from the London Eye; Eat lunch in the Bateaux London Dining Cruise. Watch a movie at The Electric Cinema, and end off your day with a candlelit dinner at Clos Maggiore.
+        </p>
+    </center>
+
+
+    <div class="timeline">
+        <div class="bubble left">
+            <div class="content">
+                <img src="londoneyeromantic.jpg" alt="London Eye" style="width:100%">
+                <h2>Day 1: London Eye</h2>
+                <p>
+                    Trip to the London Eye - 135 meters tall & includes entry to London Eye 4D Film Experience. Watch the sunset together on the London eye! (£23)
+                </p>
+            </div>
+        </div>
+
+        <div class="bubble right">
+            <div class="content">
+                <img src="bestsellerhotel.jpg" alt="London Elizabeth Hotel" style="width:100%">
+
+                <h2>Night 1: St Martins Lane London Hotel</h2>
+                <p>
+                    Check-in to the St Martins Lane London Hotel.<br /><br />
+                    <b>Address:</b> 45 St. Martin's Lane, London WC2N 4HX, UK<br />
+                    <b>Phone:</b> + 44 20 3893 3360<br />
+                    <b>Price:</b> £256 per night<br />
+
+                </p>
+            </div>
+        </div>
+
+        <div class="bubble left">
+            <div class="content">
+                <img src="museumromantic.jpg" alt="Natural History Museum" style="width:100%">
+
+                <h2>Day 2: Natural History Museum</h2>
+                <p>
+                    Wander around together and participate in after-hour events and late night tours which includes exciting exhibitions and treasures!
+                    <br /><br />
+                    <b>Location:</b> Cromwell Road, London SW7 5BD (£20)
+                </p>
+            </div>
+        </div>
+        <div class="bubble right">
+            <div class="content">
+                <img src="electriccinema.jpg" alt="Electric Cinema" style="width:100%">
+                <h2>Day 3: The Electric Cinema </h2>
+                <p>
+                    Enjoy a romantic evening with your date! Get comfortable in a 2-seater sofa with a personal cashmere blanket. The bar also serves cocktails, wines and beers!
+                    <br /><br /><b>Location:</b> 191 Portobello Road, London W11 2ED (£35)
+                </p>
+            </div>
+        </div>
+        <div class="bubble left">
+            <div class="content">
+                <img src="candlelitdinner.jpg" alt="Clos Maggiore" style="width:100%">
+
+                <h2>Night 3: Candlelit Dinner at Clos Maggiore</h2>
+                <p>
+                    This is London’s most romantic restaurant. You can choose from a variety of contemporary French dishes, including Honey Glazed Breast of Goosnargh Duck, Pan Roasted Organic Sea Trout and a Red Leg Partridge!
+                    <br /><br /><b>Location:</b> 33 King Street, Covent Garden, London WC2E 8JD (£45 per person)
+                </p>
+            </div>
+        </div>
+        <div class="bubble right">
+            <div class="content">
+                <img src="royaloperahouse.jpg" alt="Royal Opera House" style="width:100%">
+
+                <h2>Day 4: Royal Opera House</h2>
+                <p>
+                    Take your date to see a ballet or a classic romantic opera at the world-famous theatre!
+                    <br /><br /><b>Location:</b> Covent Garden London WC2E 9DD (£60 per person)
+                </p>
+            </div>
+        </div>
+
+        <div class="bubble left">
+            <div class="content">
+                <img src="diningcruise.jpg" alt="Dining Cruise" style="width:100%">
+
+                <h2>Day 5: Bateaux London Dining Cruise</h2>
+                <p>
+                    Come experience a meal on water in a glass-fronted vessel! Bring your date for afternoon tea or even a Sunday lunch with a beautiful riverside view and live entertainment! (£65 per person)
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <center>
+        <br /><br /><a href="#nil"><button class="purchasenow" type="button">Purchase Now</button></a>
+    </center>
+
+    <!--  Book mark for time line-->
+    <a name="family"></a>
+    <br />
+    <hr> <br>
+    <!-- start of family friendly itinerary--->
+
+    <center>
+        <h1 class="timeline-text-outside">Family Friendly</h1>
+        <p class="timeline-text-outside">
+            Visiting London with your family and friends is one of the best experiences you can ever have. Bring your family to visit London Zoo, have afternoon tea at Ritz, experience ShrekÕs Adventure, watch a Shakespeare play and even the Harry Potter and Cursed Child Play!
+        </p>
+    </center>
+
+
+    <div class="timeline">
+        <div class="bubble left">
+            <div class="content">
+                <img src="Ritz.jpg" alt="Ritz" style="width:100%">
+                <h2> Day 1: Afternoon tea at the Ritz</h2>
+                <p>Experience the traditional English culture and try 20 different types of loose-leaf tea, delicious pastries and scones. Remember to dress to impress!  </p>
+            </div>
+        </div>
+
+        <div class="bubble right">
+            <div class="content">
+                <img src="familyfriendlyhotel.jpg" alt="Park Grand Paddington Court" style="width:100%">
+
+                <h2>Night 1: Park Grand Paddington Court </h2>
+                <p>
+                    Check-in to the Park Grand Paddington Court.<br /><br />
+                    <b>Address:</b> 27 Devonshire Terrace, Paddington, London W2 3DP, UK <br />
+                    <b>Phone:</b> +98 66 5451 5181 <br />
+                    <b>Price:</b> £134 per night<br />
+
+                </p>
+            </div>
+        </div>
+
+        <div class="bubble left">
+            <div class="content">
+                <img src="londonzoo.jpg" alt="London Zoo" style="width:100%">
+
+                <h2>Day 2: London Zoo</h2>
+                <p>
+                    Opened in London in 1828, London Zoo is the worldÕs oldest scientific zoo.
+
+                </p>
+            </div>
+        </div>
+        <div class="bubble right">
+            <div class="content">
+                <img src="harrypotter.jpg" alt="harry potter" style="width:100%">
+                <h2>Day 3: Harry Potter and the Cursed Child Play </h2>
+                <p>The stunning Palace Theatre on Shaftesbury Avenue is home to the award winning Harry Potter and the Cursed Child. </p>
+            </div>
+        </div>
+        <div class="bubble left">
+            <div class="content">
+                <img src="shakespeareplay.jpg" alt="shakespeare Play" style="width:100%">
+
+                <h2>Day 4: Shakespeare Play at the Globe </h2>
+                <p>
+                    Watch a play at the Globe Theatre that was originally built by William ShakespeareÕs playing company in 1599 and now renovated and rebuilt remote to its original site.
+                </p>
+            </div>
+        </div>
+        <div class="bubble right">
+            <div class="content">
+                <img src="shrek.jpg" alt="shrek" style="width:100%">
+
+                <h2>Day 5: Shrek's Adventure </h2>
+                <p>
+                    Located in Central London, this is a good and fun attractions for both kids and adults!
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <center>
+        <br /><br /><a href="#nil"><button class="purchasenow" type="button">Purchase Now</button></a>
+    </center>
+
+    <br /><br />
+
+    <!-- END OF family friendly itinerary -->
+    <a name="highadrenaline"></a>
+    <br />
+    <hr> <br>
+    <!-- start of High Adrenaline itinerary--->
+
+    <center>
+        <h1 class="timeline-text-outside">High Adrenaline</h1>
+        <p class="timeline-text-outside">
+            Want an adventure in London? Tired of sightseeing London on foot? Check out this package which allows you to zipline across London, along with going on the Arcelormittal Orbit and Slide! You can also try the delicious shrimp at Bubba Gump, learn how to make cocktails, and end the day by speeding down River Thames!
+
+        </p>
+    </center>
+
+
+    <div class="timeline">
+        <div class="bubble left">
+            <div class="content">
+                <img src="zipworld.jpg" alt="Zip World London" style="width:100%">
+                <h2> Day 1: Zip World London </h2>
+                <p> Ideal for all ages. This is the biggest and fastest city zip wire in the world and can go up to 30 mph in addition to viewing the Houses of Parliament, London Eye and many other famous monuments!  </p>
+            </div>
+        </div>
+
+        <div class="bubble right">
+            <div class="content">
+                <img src="highadrenalinehotel.jpg" alt="London Elizabeth Hotel" style="width:100%">
+
+                <h2>Night 1: The Waldorf Hilton London </h2>
+                <p>
+                    Check-in to The Waldorf Hilton London.<br /><br />
+                    <b>Address:</b> Aldwych, London WC2B 4DD, UK<br />
+                    <b>Phone:</b> +33 80 5540 7451 <br />
+                    <b>Price:</b> £250 per night<br />
+
+                </p>
+            </div>
+        </div>
+
+        <div class="bubble left">
+            <div class="content">
+                <img src="arcelormittal.jpg" alt="Arcelormittal" style="width:100%">
+
+                <h2>Day 2: Arcelormittal Orbit and Slide </h2>
+                <p>
+                    Created by German artist Carsten Holler. You will climb 178m to a 360 degree viewing platform and experience London at an unbelievable height! You will then slide down while seeing the city of London!
+                </p>
+            </div>
+        </div>
+        <div class="bubble right">
+            <div class="content">
+                <img src="bubbagump.jpg" alt="Bubba Gump" style="width:100%">
+                <h2>Day 3: Bubba Gump Shrimp Co </h2>
+                <p> An American seafood restaurant chain inspired by the 1994 film Forrest Gump.</p>
+            </div>
+        </div>
+
+        <div class="bubble left">
+            <div class="content">
+                <img src="cocktailmaking.jpg" alt="Cocktail making" style="width:100%">
+
+                <h2>Day 4: Cocktail making masterclass </h2>
+                <p>
+                    Learn about the history of different drinks and create your own as well!
+                </p>
+            </div>
+        </div>
+
+        <div class="bubble right">
+            <div class="content">
+                <img src="riverthamesspeedboat.jpg" alt="River Thames Speedboat" style="width:100%">
+                <h2>Day 5: River Thames speedboat experience </h2>
+                <p> Splash around Thames at a high speed while sightseeing!</p>
+            </div>
+        </div>
+
+    </div>
+    <center>
+        <br /><br /><a href="#nil"><button class="purchasenow" type="button">Purchase Now</button></a>
+    </center>
+    <!-- end of high adrenaline itinerary -->
+
+    <br /><br />
+    <a name="relaxed"></a>
+    <br />
+    <hr> <br>
+    <!-- start of Relaxed itinerary--->
+
+    <center>
+        <h1 class="timeline-text-outside">Relaxed</h1>
+        <p class="timeline-text-outside">
+            Looking for a relaxing and refreshing trip away from all your responsibilities back at home? This package will be perfect for you! It includes an entrance fee to Camden Town, the Thames Sightseeing River Cruise, a massage in the Cowshed in Clarendon Cross, a magnificent performance in the Barbican Centre and a buffet at the famous MezzoRoma Lounge!
+
+        </p>
+    </center>
+
+
+    <div class="timeline">
+        <div class="bubble left">
+            <div class="content">
+                <img src="camdentown.jpg" alt="Camden Town" style="width:100%">
+                <h2> Day 1: Camden Town </h2>
+                <p> Explore Camden Town to discover its array of vibrant music venues. Try The Jazz Cafe, Camden Underworld, The Roundhouse or Dingwalls, to see some of the best of LondonÕs live music scene.  </p>
+            </div>
+        </div>
+
+        <div class="bubble right">
+            <div class="content">
+                <img src="relaxedhotel.jpg" alt="La Suite West" style="width:100%">
+
+                <h2>Night 1: La Suite West - Hyde Park </h2>
+                <p>
+                    Check-in to La Suite West - Hyde Park.<br /><br />
+                    <b>Address:</b> 41-51 Inverness Terrace, Westminster Borough, London, W2 3JN, UK <br />
+                    <b>Phone:</b> +44 20 7313 8484 <br />
+                    <b>Price:</b> £159 per night <br />
+
+                </p>
+            </div>
+        </div>
+
+        <div class="bubble left">
+            <div class="content">
+                <img src="clarendoncross.jpg" alt="Clarendon Cross" style="width:100%">
+                <h2>Day 2: Cowshed in Clarendon Cross </h2>
+                <p>
+                    Unwind with a massage and a museum!
+                </p>
+            </div>
+        </div>
+
+        <div class="bubble right">
+            <div class="content">
+                <img src="barbican.jpg" alt="Barbican" style="width:100%">
+                <h2>Day 3: Barbican Centre </h2>
+                <p> This is a performing arts center in the City of London and it is the largest in Europe! Come join us for an amazing performance of your choice!  </p>
+            </div>
+        </div>
+
+        <div class="bubble left">
+            <div class="content">
+                <img src="mezzoroma.jpg" alt="MezzoRoma" style="width:100%">
+
+                <h2>Day 4: MezzoRoma Lounge </h2>
+                <p>
+                    Try all kinds of cuisines at this well known buffet!
+                </p>
+            </div>
+        </div>
+    </div>
+    <center>
+        <br /><br /><a href="#nil"><button class="purchasenow" type="button">Purchase Now</button></a>
+    </center>
+    <!-- end of Relaxed itinerary -->
+    <!-- Book mark for timeline-->
+    <a name="wilderness"></a>
+    <br><hr /> <br>
+
+    <center>
+        <h1 class="timeline-text-outside">Wilderness</h1>
+        <p class="timeline-text-outside">
+            Are you ready for an adventure in London? You’ve come to the right place! Purchase this amazing package that includes all the things you wish to experience here in London! This package comprises the entrance fee to the London Zoo, the Rose Garden at Hyde Park, Richmond Park, Holland Park and the popular Wilderness Festival where you can go camping!
+        </p>
+    </center>
+
+
+    <div class="timeline">
+        <div class="bubble left">
+            <div class="content">
+                <img src="rosegarden.jpg" alt="Rose Garden" style="width:100%">
+                <h2>Day 1: Rose Garden at Hyde Park</h2>
+                <p>
+                    Come see the magnificent beauty of many unique plants and the wonderful garden right here in London!
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="bubble right">
+            <div class="content">
+                <img src="acehotel.jpg" alt="Ace Hotel" style="width:100%">
+
+                <h2>Night 1: Ace Hotel London Shoreditch</h2>
+                <p>
+                    Check-in to the Ace Hotel in London Shoreditch.<br /><br />
+                    <b>Address:</b> 100 Shoreditch High Street, Hackney, London, E1 6JQ, UK<br />
+                    <b>Phone:</b> +44 20 7613 9800<br />
+                    <b>Price:</b> £164 per night<br />
+
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="bubble left">
+            <div class="content">
+                <img src="zoo.jpg" alt="Zoo" style="width:100%">
+
+                <h2>Day 2: London Zoo</h2>
+                <p>
+                    Explore the world’s oldest scientific zoo in England! Adults: £24 Children: £18 per person                    <br /><br />
+                </p>
+            </div>
+        </div>
+
+
+        <div class="bubble right">
+            <div class="content">
+                <img src="wilderness.jpg" alt="Wilderness Festival" style="width:100%">
+                <h2>Day 3: Wilderness Festival </h2>
+                <p>
+                    Watch many live performances and partake in many activities. You will also be able to camp in many different environments! Choose from accessible camping, meadow camping, family camping, or even live-in vehicle camping! (£65 per night)
+                    <br /><br /><b>Location:</b> The Regent’s Park Chester Rd, London NW1 4NR, UK
+                </p>
+            </div>
+        </div>
+
+
+        <div class="bubble left">
+            <div class="content">
+                <img src="richmondpark.jpg" alt="Richmond Park" style="width:100%">
+
+                <h2>Day 4: Richmond Park</h2>
+                <p>
+                    Experience how it feels like to be on the hunting ground and where there used to be bows and arrows. This ancient woodland and open space is perfect for hiking and you can possibly spot some deer!
+                    <br /><br /><b>Location:</b> Kings Rd, Surrey, London TW10 5HS, UK (entrance fee of £20)
+
+                </p>
+            </div>
+        </div>
+
+
+        <div class="bubble right">
+            <div class="content">
+                <img src="hollandpark.jpg" alt="Holland Park" style="width:100%">
+
+                <h2>Day 5: Holland Park Tour</h2>
+                <p>
+                    Come to this extensive woodland area in the Royal Borough of Kensington and Chelsea in central London, home to a variety of wildlife including mammals, birds and insects. This park covers an area of 54 acres and was home to Cope Castle previously. (£20 per person)                    <br /><br /><b>Location:</b> Covent Garden London WC2E 9DD (£60 per person)
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+    <center>
+        <br /><br /><a href="#nil"><button class="purchasenow" type="button">Purchase Now</button></a>
+    </center>
+    <!--  Book mark for time line-->
+    <a name="business"></a>
+    <br><hr /> <br>
+
+    <center>
+        <h1 class="timeline-text-outside">Business</h1>
+        <p class="timeline-text-outside">
+            Are you here for a business meeting or conference and not want to go through the burden of finding your own accomodation and food? Well, this package would be a great fit for you! This includes a hotel for your entire stay along with breakfast every morning and an exclusive Private Dining Room with quality food! There will also be a meeting room of all sizes for you and your guests. And did we mention the incredible pool and spa we have for you to destress at the end of the day!
+        </p>
+    </center>
+
+
+    <div class="timeline">
+        <div class="bubble left">
+            <div class="content">
+                <img src="mayfair.jpg" alt="May Fair Hotel" style="width:100%">
+                <h2>Hotel 1: The May Fair Hotel</h2>
+                <p>
+                    Check-in to the May Fair Hotel.<br /><hr />
+                <p style="text-align:left;">
+                    Includes
+                    <span style="float:right;">
+                        <i title="Rooms and Suites" class="material-icons">&#xe53a;</i>
+                        <i title="Breakfast" class="material-icons">&#xeb44;</i>
+                        <i title="Dinner" class="material-icons">&#xe56c;</i>
+                        <i title="Meeting Room" class="material-icons">&#xe8f9;</i>
+                        <i title="Spa" class="material-icons">&#xeb4c;</i>
+
+                    </span>
+                </p><hr />
+                <p style="text-align:left;">
+                    Cost
+                    <span style="float:right;">
+                        £227 per night
+                    </span>
+                </p>
+                <hr />
+                <br />
+
+                <!-- slide show within hotel timeline card =================================   -->
+
+                <div class="slideshow-container2">
+
+                    <center>
+                        <h2>Hotel Amenities</h2>
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="reviews">
+                            <div class="numbertext">1 / 5</div>
+                            <img class="amenities-images" src="mayfairspa.jpg" style="width:100%">
+                            <div class="text2">
+                                <p><b>Spa</b></p>
+                                The May Fair Spa offers the ultimate in spa packages to create the most lavish day of all. What makes them unique is that we take great care in providing the right treatments for every individual, so that customer will be really delighted with the results.
+                            </div>
+
+
+                        </div>
+
+                        <div class="reviews">
+                            <div class="numbertext">2 / 5</div>
+                            <img class="amenities-images" src="meetingroom.jpg" style="width:100%">
+                            <div class="text2">
+                                <p><b>Meeting Room</b></p>
+                                Each of their private business meeting rooms are individually designed in a signature colour to make the most out of  natural daylight and contemporary design.
+                            </div>
+
+                        </div>
+
+
+                        <div class="reviews">
+                            <div class="numbertext">3 / 5</div>
+                            <img class="amenities-images" src="mayfairroom.jpg" style="width:100%">
+                            <div class="text2">
+                                <p><b>Rooms and Suites</b></p>
+                                Few luxury hotel rooms in London can match the fine detail of a May Fair Superior bedroom. Each room features deeply textured fabrics, Vi-Spring mattress, goose down pillows and duvet, Catalan-design.
+                            </div>
+                        </div>
+
+                        <div class="reviews">
+                            <div class="numbertext">4 / 5</div>
+                            <img class="amenities-images" src="mayfairdining.jpg" style="width:100%">
+                            <div class="text2">
+                                <p><b>Dining Rooms</b></p>
+                                The Private Dining Room is an exclusive private dining venue, tucked away in a discreet area of the hotel. Perfect for corporate dinners and smaller private functions, offering quality food in a stylish environment for up to 64 guests.
+                            </div>
+                        </div>
+
+                        <div class="reviews">
+                            <div class="numbertext">5 / 5</div>
+                            <img class="amenities-images" src="mayfairbreakfast.jpg" style="width:100%">
+                            <div class="text2">
+                                <p><b>Breakfast</b></p>
+                                One of the fanciest breakfasts in London. Perfect for filling your tummy right before a meeting.
+                            </div>
+                        </div>
+
+
+                    </center>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+                <br /><br />
+                <script>
+
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    // Next/previous controls
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("reviews");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                    }
+
+
+                </script>
+
+                <!-- end slide show within hotel timeline card ======================================= -->
+
+            </div>
+        </div>
+
+
+
+        <div class="bubble right">
+            <div class="content">
+                <img src="connaught.jpg" alt="Connaught Hotel" style="width:100%">
+                <h2>Hotel 2: The Connaught Hotel</h2>
+                <p>
+                    Check-in to The Connaught Hotel.<br /><hr />
+
+                <p style="text-align:left;">
+                    Includes
+                    <span style="float:right;">
+                        <i title="Rooms and Suites" class="material-icons">&#xe53a;</i>
+                        <i title="Breakfast" class="material-icons">&#xeb44;</i>
+                        <i title="Dinner" class="material-icons">&#xe56c;</i>
+                        <i title="Meeting Room" class="material-icons">&#xe8f9;</i>
+                        <i title="Spa" class="material-icons">&#xeb4c;</i>
+
+                    </span>
+                </p><hr />
+                <p style="text-align:left;">
+                    Cost
+                    <span style="float:right;">
+                        £200 per night
+                    </span>
+                </p>
+
+                <hr /><br />
+
+                <!-- slide show within hotel timeline card =================================   -->
+
+                <div class="slideshow-container3">
+
+                    <center>
+                        <h2>Hotel Amenities</h2>
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="reviews2">
+                            <div class="numbertext">1 / 5</div>
+                            <img class="amenities-images" src="connaughtspa.jpg" style="width:100%">
+                            <div class="text2">
+                                <p><b>Spa</b></p>
+                                Hidden away at the heart of The Connaught lies the entrance to another world. A place where time seems to stand still, and every moment is devoted to tranquillity. You’ve arrived at Aman Spa at The Connaught – the very first Aman Spa to be built outside the world-renowned Aman resorts.
+                            </div>
+
+
+                        </div>
+
+                        <div class="reviews2">
+                            <div class="numbertext">2 / 5</div>
+                            <img class="amenities-images" src="connaughtmeeting.jpg" style="width:100%">
+                            <div class="text2">
+                                <p><b>Meeting Room</b></p>
+                                Impressive rooms to suit both small parties and grand delegations. An experienced events team on call – and state-of-the-art technology to hand. The Connaught brings together everything you need to make a powerful impression with your corporate event
+                            </div>
+
+                        </div>
+
+
+                        <div class="reviews2">
+                            <div class="numbertext">3 / 5</div>
+                            <img class="amenities-images" src="connaughtrooms.jpg" style="width:100%">
+                            <div class="text2">
+                                <p><b>Rooms and Suites</b></p>
+                                The famous hotel has beautiful and unique bedrooms, each with a king-size bed, mood lighting, a 32-inch plasma TV and original artwork. The marble bathrooms boast a plasma TV and walk-in shower.
+
+                            </div>
+                        </div>
+
+                        <div class="reviews2">
+                            <div class="numbertext">4 / 5</div>
+                            <img class="amenities-images" src="connaughtdining.jpg" style="width:100%">
+                            <div class="text2">
+                                <p><b>Dining Rooms</b></p>
+                                Sit down to a laid-back lunch with friends. Discover Michelin-starred culinary creativity. Sip a perfectly-stirred martini from a chilled glass, or linger over a rare vintage brandy. Old favourites and new experiences go hand-in-hand at The Connaught. All in surroundings certain to charm, wrapped up with service designed to delight.
+                            </div>
+                        </div>
+
+                        <div class="reviews2">
+                            <div class="numbertext">5 / 5</div>
+                            <img class="amenities-images" src="connaughtbreakfast.jpg" style="width:100%">
+                            <div class="text2">
+                                <p><b>Breakfast</b></p>
+                                You can enjoy a wonderful breakfast at the Connaught, then feel energy for the meeting. We will provide plenty of foods which will fit you.
+                            </div>
+                        </div>
+
+
+                    </center>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot2" onclick="currentSlide2(1)"></span>
+                    <span class="dot2" onclick="currentSlide2(2)"></span>
+                    <span class="dot2" onclick="currentSlide2(3)"></span>
+                    <span class="dot2" onclick="currentSlide2(4)"></span>
+                    <span class="dot2" onclick="currentSlide2(5)"></span>
+                </div>
+                <br /><br />
+                <script>
+
+                    var slideIndex = 1;
+                    showSlides2(slideIndex);
+
+                    // Next/previous controls
+                    function plusSlides2(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    // Thumbnail image controls
+                    function currentSlide2(n) {
+                        showSlides2(slideIndex = n);
+                    }
+
+                    function showSlides2(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("reviews2");
+                        var dots = document.getElementsByClassName("dot2");
+                        if (n > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                    }
+
+
+                </script>
+
+                <!-- end slide show within hotel timeline card ======================================= -->
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+    <center>
+        <br /><br /><a href="#nil"><button class="purchasenow" type="button">Purchase Now</button></a>
+    </center>
+
+    <br><hr /> <br>
+    <!-- Book mark for timeline -->
+
+
+    <br /><br />
+
+      <div class="about_container">
+
+        <div class="column">
+          <p>
+            <b>Why Travel With Us</b><br /><br />
+            With more than 60 years of travel experience, ÇaVaBien Travel is a well-experienced travel agency known for giving individuals an unique vacation for all people. We offer a wide range of packages including hand-selected hotels, one-of-a-kind tours and services.
+
+            We specialize in packages and tours in London, bringing people from all over the world to experience the wonders and greatness of this city.
+          </p>
+        </div>
+
+        <div class="column">
+          <p>
+            <b>Contact Us</b><br/>
+            <br />
+            <a href="http://localhost:3000/contactus">
+              <img class="contactus-icons" src="address.png" />
+            </a>
+            <a href="mailto:customersupport@ÇaVaBien.net?Subject=Customer%20Query">
+              <img class="contactus-icons" src="email.png" />
+            </a>
+            <a href="tel:+1-817-562-8591">
+              <img class="contactus-icons" src="phone.png" />
+            </a>
+            <a href="https://www.facebook.com/%C3%87a-Va-Bien-187131645335624/?modal=admin_todo_tour">
+              <img class="contactus-icons" src="facebooklogobw.png">
+</a>
+
+            <a href="https://www.instagram.com/cavabien6/">
+              <img class="contactus-icons" src="instagramlogobw.png">
+</a>
+            <br /><b>Address</b>: 5 Sackville St, Mayfair, London W1S 3FS, UK
+            <br /><b>Email</b>: customersupport@ÇaVaBien.net
+            <br /><b>Phone</b>: Call +1-817-562-8591 to speak to 24 hour Customer Service.
+
+          </p>
+        </div>
+
+
+      </div>
+</body>
+
+</html>
+

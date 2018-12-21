@@ -1,0 +1,553 @@
+<title>Hotels | Ça Va Bien Travel Agency</title>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <link rel="icon" type="image/gif/png" href="cvblogo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="ca va bien.css" />
+    <link href="style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <!-- navbar goes here -->
+  <div class="navbar">
+
+    <a class="logo" href="http://localhost:3000/home">
+      <img src="cvblogo.png" style="width:80%">
+    </a>
+
+
+    <a href="http://localhost:3000/hotels">Hotels</a>
+    <a href="http://localhost:3000/flights">Flights</a>
+
+    <div class="dropdown">
+      <a href="http://localhost:3000/packages">Packages</a>
+
+      <button class="dropbtn">
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="http://localhost:3000/packages#bestseller">Best Seller</a>
+        <a href="http://localhost:3000/packages#family">Family Friendly</a>
+        <a href="http://localhost:3000/packages#highadrenaline">High Adrenaline</a>
+        <a href="http://localhost:3000/packages#relaxed">Relaxed</a>
+        <a href="http://localhost:3000/packages#romantic">Romantic</a>
+        <a href="http://localhost:3000/packages#wilderness">Wilderness</a>
+        <a href="http://localhost:3000/packages#business">Business</a>
+      </div>
+
+    </div>
+
+    <div class="navbar-right">
+      <a href="http://localhost:3000/aboutus">About</a>
+      <div class="dropdown">
+        <a href="http://localhost:3000/contactus">Contact Us</a>
+        <button class="dropbtn">
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="http://localhost:3000/contactus">Locate Us</a>
+          <a href="mailto:customersupport@ÇaVaBien.net?Subject=Customer%20Query" target="_top">Email Us</a>
+          <a href="tel:+1-817-562-8591">Call Us</a>
+          <a href="https://www.facebook.com/%C3%87a-Va-Bien-187131645335624/?modal=admin_todo_tour">Facebook</a>
+          <a href="https://www.instagram.com/cavabien6">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar ends here -->
+    <br>
+    <br />
+    <div class="wallpaper-container">
+        <img class="wallpaper" src="wallpaper.jpg" style="width:100%">
+        <div class="centered">
+            <h2><b>Hotels</b></h2>
+            Home &#8594 Hotels<br />
+        </div>
+
+    </div>
+    <br>
+    <br>
+
+      <!-- our search bar begins here -->
+      <center>
+        <div class="searchbar">
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Flight')" id="defaultOpen">Flights</button>
+            <button class="tablinks" onclick="openCity(event, 'Hotel')">Hotels</button>
+            <button class="tablinks" onclick="openCity(event, 'Packages')">Packages</button>
+          </div>
+
+          <div id="Flight" class="tabcontent">
+
+            <!-- Search Bar for "Flights"-->
+            <div class="search-container">
+              From <br>
+                <form action="http://localhost:3000/flightsbooking" method="get">
+                  <select name="startlocation">
+                    <option value="NIL">Select a location</option>
+                    <option value="SYDNEY">Sydney</option>
+                    <option value="CHICAGO">Chicago</option>
+                    <option value="SINGAPORE">Singapore</option>
+                    <option value="NEW YORK">New York</option>
+                    <option value="PARIS">Paris</option>
+                    <option value="LOS ANGELES">Los Angeles</option>
+                    <option value="TORONTO">Toronto</option>
+                    <option value="HONG KONG">Hong Kong</option>
+                    <option value="DUBAI">Dubai</option>
+                    <option value="BANGKOK">Bangkok</option>
+                    <option value="ROME">Rome</option>
+                    <option value="INCHEON">Incheon</option>
+                    <option value="TAIPEI">Taipei</option>
+                    <option value="BEIJING">Beijing</option>
+                    <option value="SHANGHAI">Shanghai</option>
+                    <option value="TOKYO">Tokyo</option>
+                    <option value="FRANKFURT">Frankfurt</option>
+                    <option value="MOSCOW">Moscow</option>
+
+
+
+                  </select>
+
+                  <br>
+
+
+                    <br>
+                      To<br>
+
+                        <input type="text" value="LONDON" name="endlocation">
+
+                          <br>
+                            <br>
+
+                              Start Date<br>
+
+                                <input type="date" placeholder="Search.." name="startdate">
+
+
+                                  <br>
+                                    <br>
+
+                                      Return Date <br>
+
+                                        <input type="date" placeholder="Search.." name="enddate">
+
+
+
+                                          <br />
+                                          <br>
+
+                                            <input class="searchnow" type="submit">
+                                        </form>
+
+              </div>
+
+          </div>
+
+
+
+          <div id="Hotel" class="tabcontent">
+
+            <div class="search-container">
+
+
+              Where would you like to stay in London? <Br>
+                <form action="/hotelsbooking" method="get">
+                  <select name="londonplaces">
+                    <option value="NIL">Select a location</option>
+                    <option value="Euston Square">Euston Square</option>
+                    <option value="Gloucester Road">Gloucester Road</option>
+                    <option value="High Street Kensington">High Street Kensington</option>
+                    <option value="King's Cross St Pancras">King's Cross St Pancras</option>
+                    <option value="Oxford Circus">Oxford Circus</option>
+                    <option value="Piccadilly Circus">Piccadilly Circus</option>
+                    <option value="Tottenham Court Road">Tottenham Court Road</option>
+                    <option value="Victoria">Victoria</option>
+                    <option value="Waterloo">Waterloo</option>
+                    <option value="Westminster">Westminster</option>
+
+                  </select>
+
+
+
+                  <br>
+                    <br>
+                      Check-In Date <br>
+
+                        <input type="date" placeholder="Search.." name="startdate">
+
+                          <br>
+                            <br>
+                              Check-Out Date <br>
+
+                                <input type="date" placeholder="Search.." name="enddate">
+
+                                  <br>
+                                    <br>
+                                      <input class="searchnow" type="submit">
+                         </form>
+              </div>
+          </div>
+
+          <div id="Packages" class="tabcontent">
+
+            <div class="search-container">
+              When would you like to travel? <br>
+                <form action="/packagesbooking" method="get">
+                  <select name="travelmonth">
+                    <option value="NIL">Select a month</option>
+                    <option value="June 2018">June 2018</option>
+                    <option value="July 2018">July 2018</option>
+                    <option value="August 2018">August 2018</option>
+                    <option value="September 2018">September 2018</option>
+                    <option value="November 2018">November 2018</option>
+                    <option value="December 2018">December 2018</option>
+                    <option value="January 2019">January 2019</option>
+
+
+                  </select>
+
+                  <br>
+                    <br />
+                    <input class="searchnow" type="submit">
+                           </form>
+              </div>
+
+          </div>
+
+          <script>
+
+
+            function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+
+                document.getElementById("defaultOpen").click();
+          </script>
+
+        </div>
+      </center>
+      <!-- our search bar ends here -->
+        
+    <br>
+    <br>
+    <!-- start of Hotel pics -->
+    <div class="row">
+        <div class="column">
+            <img src="hotel1.jpg" style="width:100%" class="hover-shadow cursor">
+            <p>
+                <b> The Portobello Hotel </b>
+                <i title="4-star hotel">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </i>
+                <br>
+                <i title="Address" class="material-icons">&#xe55f;</i> 22 Stanley Gardens, Kensington and Chelsea, London, W11 2NG, UK <br>
+                <i title="Phone" class="material-icons">&#xe0b0;</i> +44 20 7727 2777 <br>
+                <i title="Price" class="material-icons">&#xe227;</i> &#163;225
+                <br /><br /><a href="http://localhost:3000/hotels#map"><button class="searchnow" type="button">View On Map</button></a>
+
+            
+        
+                    <a href="#nil">
+                      <button class="searchnow" type="button">Purchase Now</button>
+                    </a>
+
+            </p>
+        </div>
+        <div class="column">
+            <img src="hotel2.jpg" style="width:100%" class="hover-shadow cursor">
+            <p>
+                <b> St Martins Lane London Hotel </b>
+                <i title="5-star hotel">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </i>
+                <br>
+                <i title="Address" class="material-icons">&#xe55f;</i> 45 St. Martin's Lane, London WC2N 4HX, UK <br>
+                <i title="Phone" class="material-icons">&#xe0b0;</i> + 44 20 3893 3360 <br>
+                <i title="Price" class="material-icons">&#xe227;</i> &#163;256
+                <br /><br /><a href="http://localhost:3000/hotels#map"><button class="searchnow" type="button">View On Map</button></a>
+
+                  <a href="#nil">
+                    <button class="searchnow" type="button">Purchase Now</button>
+                  </a>
+                  
+            </p>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="hotel3.jpg" style="width:100%" class="hover-shadow cursor">
+            <p>
+                <b> La Suite West - Hyde Park </b>
+                <i title="4-star hotel">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </i>
+                <br>
+                <i title="Address" class="material-icons">&#xe55f;</i> 41-51 Inverness Terrace, Westminster Borough, London, W2 3JN, UK <br>
+                <i title="Phone" class="material-icons">&#xe0b0;</i> +44 20 7313 8484 <br>
+                <i title="Price" class="material-icons">&#xe227;</i> &#163;159
+                <br /><br /><a href="http://localhost:3000/hotels#map"><button class="searchnow" type="button">View On Map</button></a>
+                  <a href="#nil">
+                    <button class="searchnow" type="button">Purchase Now</button>
+                  </a>
+            </p>
+        </div>
+        <div class="column">
+            <img src="hotel4.jpg" style="width:100%" class="hover-shadow cursor">
+            <p>
+                <b> Mercure London Kensington Hotel </b>
+                <i title="4-star hotel">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </i>
+                <br>
+
+                <i title="Address" class="material-icons">&#xe55f;</i> 1A Lexham Gardens, Kensington, London W8 5JJ, UK<br>
+                <i title="Phone" class="material-icons">&#xe0b0;</i> +44 20 7244 2400 <br>
+                <i title="Price" class="material-icons">&#xe227;</i> &#163;184
+                <br /><br /><a href="http://localhost:3000/hotels#map"><button class="searchnow" type="button">View On Map</button></a>
+                  <a href="#nil">
+                    <button class="searchnow" type="button">Purchase Now</button>
+                  </a>
+            </p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="hotel5.jpg" style="width:100%" class="hover-shadow cursor">
+            <p>
+                <b> Ace Hotel London Shoreditch </b>
+                <i title="4-star hotel">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </i>
+                <br>
+                <i title="Address" class="material-icons">&#xe55f;</i> 100 Shoreditch High Street, Hackney, London, E1 6JQ, UK <br>
+                <i title="Phone" class="material-icons">&#xe0b0;</i> +44 20 7613 9800 <br>
+                <i title="Price" class="material-icons">&#xe227;</i> &#163;164
+                <br /><br /><a href="http://localhost:3000/hotels#map"><button class="searchnow" type="button">View On Map</button></a>
+                  <a href="#nil">
+                    <button class="searchnow" type="button">Purchase Now</button>
+                  </a>
+            </p>
+        </div>
+        <div class="column">
+            <img src="hotel6.jpg" style="width:100%" class="hover-shadow cursor">
+            <p>
+                <b> The Waldorf Hilton London </b>
+                <i title="4-star hotel">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </i>
+                <br>
+                <i title="Address" class="material-icons">&#xe55f;</i> Aldwych, London WC2B 4DD, UK <br>
+                <i title="Phone" class="material-icons">&#xe0b0;</i> +33 80 5540 7451 <br>
+                <i title="Price" class="material-icons">&#xe227;</i> &#163;250 <br>
+                <br /><br /><a href="http://localhost:3000/hotels#map"><button class="searchnow" type="button">View On Map</button></a>
+                  <a href="#nil">
+                    <button class="searchnow" type="button">Purchase Now</button>
+                  </a>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="hotel7.jpg" style="width:100%" class="hover-shadow cursor">
+            <p>
+                <b> Smart Hyde Park Inn Hostel </b>
+                <i title="1-star hotel">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </i>
+                <br>
+                <i title="Address" class="material-icons">&#xe55f;</i> 48-50 Inverness Terrace, Westminster Borough, London, W2 3JA, United Kingdom <br>
+                <i title="Phone" class="material-icons">&#xe0b0;</i> +44 20 8992 8689 <br>
+                <i title="Price" class="material-icons">&#xe227;</i> &#163;83
+                <br /><br /><a href="http://localhost:3000/hotels#map"><button class="searchnow" type="button">View On Map</button></a>
+                  <a href="#nil">
+                    <button class="searchnow" type="button">Purchase Now</button>
+                  </a>
+            </p>
+        </div>
+        <div class="column">
+            <img src="hotel8.jpg" style="width:100%" class="hover-shadow cursor">
+            <p>
+                <b> London Elizabeth Hotel </b>
+                <i title="3-star hotel">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </i>
+                <br>
+                <i title="Address" class="material-icons">&#xe55f;</i> Lancaster Terrace, Hyde Park, W23PF, UK <br>
+                <i title="Phone" class="material-icons">&#xe0b0;</i> +98 65 5555 1511 <br>
+                <i title="Price" class="material-icons">&#xe227;</i> &#163;181
+                <br /><br /><a href="http://localhost:3000/hotels#map"><button class="searchnow" type="button">View On Map</button></a>
+                  <a href="#nil">
+                    <button class="searchnow" type="button">Purchase Now</button>
+                  </a>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="hotel9.jpg" style="width:100%" class="hover-shadow cursor">
+            <p>
+                <b> Park Grand Paddington Court</b>
+                <i title="4-star hotel">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </i>
+                <br>
+                <i title="Address" class="material-icons">&#xe55f;</i> 27 Devonshire Terrace, Paddington, London W2 3DP, UK <br>
+                <i title="Phone" class="material-icons">&#xe0b0;</i> +98 66 5451 5181
+                <br>
+                <i title="Price" class="material-icons">&#xe227;</i> &#163;134
+                <br /><br /><a href="http://localhost:3000/hotels#map"><button class="searchnow" type="button">View On Map</button></a>
+                  <a href="#nil">
+                    <button class="searchnow" type="button">Purchase Now</button>
+                  </a>
+            </p>
+        </div>
+        <div class="column">
+            <img src="hotel10.jpg" style="width:100%" class="hover-shadow cursor">
+            <p>
+                <b> Radisson Blu Edwardian Vanderbilt </b>
+                <i title="3-star hotel">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </i>
+                <br>
+                <i title="Address" class="material-icons">&#xe55f;</i> 68-86 Cromwell Road, Kensington and Chelsea, London, SW7 5BT, UK <br>
+                <i title="Phone" class="material-icons">&#xe0b0;</i> +98 65 4415 4458 <br>
+                <i title="Price" class="material-icons">&#xe227;</i> &#163;154 <br>
+                <br /><br /><a href="http://localhost:3000/hotels#map"><button class="searchnow" type="button">View On Map</button></a>
+                  <a href="#nil">
+                    <button class="searchnow" type="button">Purchase Now</button>
+                  </a>
+            </p>
+
+        </div>
+    </div>
+    <hr />
+
+    <a name="map"></a>
+
+<center><h2>Map of Hotels</h2></center>
+  
+    
+
+    <!-- end of Hotel pics -->
+    <!-- hotel maps -->
+
+    <div id="map"></div>
+    <script src="script.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRD8Li-yFJ7f59w-1afzAdzSG08nWi_Ss&callback=initMap"></script>
+    <br />
+    <!-- end of hotel map -->
+      <div class="about_container">
+
+        <div class="column">
+          <p>
+            <b>Why Travel With Us</b><br /><br />
+            With more than 60 years of travel experience, ÇaVaBien Travel is a well-experienced travel agency known for giving individuals an unique vacation for all people. We offer a wide range of packages including hand-selected hotels, one-of-a-kind tours and services.
+
+            We specialize in packages and tours in London, bringing people from all over the world to experience the wonders and greatness of this city.
+          </p>
+        </div>
+
+        <div class="column">
+          <p>
+            <b>Contact Us</b><br/>
+            <br />
+            <a href="http://localhost:3000/contactus">
+              <img class="contactus-icons" src="address.png" />
+            </a>
+            <a href="mailto:customersupport@ÇaVaBien.net?Subject=Customer%20Query">
+              <img class="contactus-icons" src="email.png" />
+            </a>
+            <a href="tel:+1-817-562-8591">
+              <img class="contactus-icons" src="phone.png" />
+            </a>
+            <a href="https://www.facebook.com/%C3%87a-Va-Bien-187131645335624/?modal=admin_todo_tour">
+              <img class="contactus-icons" src="facebooklogobw.png">
+</a>
+
+            <a href="https://www.instagram.com/cavabien6/">
+              <img class="contactus-icons" src="instagramlogobw.png">
+</a>
+            <br /><b>Address</b>: 5 Sackville St, Mayfair, London W1S 3FS, UK
+            <br /><b>Email</b>: customersupport@ÇaVaBien.net
+            <br /><b>Phone</b>: Call +1-817-562-8591 to speak to 24 hour Customer Service.
+
+          </p>
+        </div>
+
+
+      </div>
+</body>
+
+</html>
+

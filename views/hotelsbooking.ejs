@@ -1,0 +1,318 @@
+<title>Hotel Search Results | Ça Va Bien Travel Agency</title>
+
+<html>
+
+<head>
+    <link rel="icon" type="image/gif/png" href="cvblogo.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="ca va bien.css" />
+
+</head>
+
+<body>
+
+  <!-- navbar goes here -->
+  <div class="navbar">
+
+    <a class="logo" href="http://localhost:3000/home">
+      <img src="cvblogo.png" style="width:80%">
+    </a>
+
+
+    <a href="http://localhost:3000/hotels">Hotels</a>
+    <a href="http://localhost:3000/flights">Flights</a>
+
+    <div class="dropdown">
+      <a href="http://localhost:3000/packages">Packages</a>
+
+      <button class="dropbtn">
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="http://localhost:3000/packages#bestseller">Best Seller</a>
+        <a href="http://localhost:3000/packages#family">Family Friendly</a>
+        <a href="http://localhost:3000/packages#highadrenaline">High Adrenaline</a>
+        <a href="http://localhost:3000/packages#relaxed">Relaxed</a>
+        <a href="http://localhost:3000/packages#romantic">Romantic</a>
+        <a href="http://localhost:3000/packages#wilderness">Wilderness</a>
+        <a href="http://localhost:3000/packages#business">Business</a>
+      </div>
+
+    </div>
+
+    <div class="navbar-right">
+      <a href="http://localhost:3000/aboutus">About</a>
+      <div class="dropdown">
+        <a href="http://localhost:3000/contactus">Contact Us</a>
+        <button class="dropbtn">
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="http://localhost:3000/contactus">Locate Us</a>
+          <a href="mailto:customersupport@ÇaVaBien.net?Subject=Customer%20Query" target="_top">Email Us</a>
+          <a href="tel:+1-817-562-8591">Call Us</a>
+          <a href="https://www.facebook.com/%C3%87a-Va-Bien-187131645335624/?modal=admin_todo_tour">Facebook</a>
+          <a href="https://www.instagram.com/cavabien6">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar ends here -->
+
+<!-- wallpaper starts here -->
+  <br>
+    <br />
+    <div class="wallpaper-container">
+      <img class="wallpaper" src="wallpaper.jpg" style="width:100%">
+        <div class="centered">
+          <h2>
+            <b>Hotel Results</b>
+          </h2>
+          Home &#8594 Hotels &#8594 Hotel Results<br />
+        </div>
+
+      </div>
+    <br>
+      <br>
+<!-- wallpaper ends here -->
+
+        <center>
+
+       
+            Found <b>4</b> hotels near <b>
+              <%= londonplaces %>
+            </b>.
+        
+          <br>
+            <br>
+          
+        </center>
+        <div class="row">
+
+          <a href="#">
+            <div class="polaroid-center">
+
+                <div class="container">
+                  
+               
+                  <p>
+                    <img src="hotel4.jpg" alt="Mercure London Kensington Hotel" style="width:45%">
+                      <br>
+                        <b>Mercure London Kensington Hotel</b>
+                  </p>
+                
+                  <br /><hr />
+
+                  <p style="text-align:left;">
+                    Check-In Date
+                    <span style="float:right;">
+                      <%= startdate %>
+                    </span>
+                  </p>
+                  <hr />
+
+                  <p style="text-align:left;">
+                    Check-Out Date
+                    <span style="float:right;">
+                      <%= enddate %>
+                    </span>
+                  </p>
+                  <hr />
+                 
+                  <p style="text-align:left;">
+                    Price
+                    <span style="float:right;">&#163;184</span>
+                  </p>
+
+
+                </div>
+              </div>
+          </a>
+
+        </div>
+
+        <div class="row">
+
+          <a href="#">
+            <div class="polaroid-center">
+
+              <div class="container">
+
+
+                <p>
+                  <img src="hotel6.jpg" alt="The Waldorf Hilton London" style="width:45%">
+                    <br>
+                      <b>The Waldorf Hilton London</b>
+                    </p>
+
+                <br />
+                <hr />
+
+                <p style="text-align:left;">
+                  Check-In Date
+                  <span style="float:right;">
+                    <%= startdate %>
+                  </span>
+                </p>
+                <hr />
+
+                <p style="text-align:left;">
+                  Check-Out Date
+                  <span style="float:right;">
+                    <%= enddate %>
+                  </span>
+                </p>
+                <hr />
+
+                <p style="text-align:left;">
+                  Price
+                  <span style="float:right;">&#163;250</span>
+                </p>
+
+
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="row">
+
+          <a href="#">
+            <div class="polaroid-center">
+
+              <div class="container">
+
+
+                <p>
+                  <img src="hotel1.jpg" alt="The Portobello Hotel" style="width:45%">
+                    <br>
+                      <b>The Portobello Hotel</b>
+                    </p>
+
+                <br />
+                <hr />
+
+                <p style="text-align:left;">
+                  Check-In Date
+                  <span style="float:right;">
+                    <%= startdate %>
+                  </span>
+                </p>
+                <hr />
+
+                <p style="text-align:left;">
+                  Check-Out Date
+                  <span style="float:right;">
+                    <%= enddate %>
+                  </span>
+                </p>
+                <hr />
+
+                <p style="text-align:left;">
+                  Price
+                  <span style="float:right;">&#163;225</span>
+                </p>
+
+
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="row">
+
+          <a href="#">
+            <div class="polaroid-center">
+
+              <div class="container">
+
+
+                <p>
+                  <img src="hotel5.jpg" alt="Ace Hotel London Shoreditch" style="width:45%">
+                    <br>
+                      <b>Ace Hotel London Shoreditch</b>
+                    </p>
+
+                <br />
+                <hr />
+
+                <p style="text-align:left;">
+                  Check-In Date
+                  <span style="float:right;">
+                    <%= startdate %>
+                  </span>
+                </p>
+                <hr />
+
+                <p style="text-align:left;">
+                  Check-Out Date
+                  <span style="float:right;">
+                    <%= enddate %>
+                  </span>
+                </p>
+                <hr />
+
+                <p style="text-align:left;">
+                  Price
+                  <span style="float:right;">&#163;164</span>
+                </p>
+
+
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <br />
+        <br />
+
+
+        <div class="about_container">
+
+          <div class="column">
+            <p>
+              <b>Why Travel With Us</b><br /><br />
+              With more than 60 years of travel experience, ÇaVaBien Travel is a well-experienced travel agency known for giving individuals an unique vacation for all people. We offer a wide range of packages including hand-selected hotels, one-of-a-kind tours and services.
+
+              We specialize in packages and tours in London, bringing people from all over the world to experience the wonders and greatness of this city.
+            </p>
+          </div>
+
+          <div class="column">
+            <p>
+              <b>Contact Us</b><br/>
+              <br />
+              <a href="http://localhost:3000/contactus">
+                <img class="contactus-icons" src="address.png" />
+              </a>
+              <a href="mailto:customersupport@ÇaVaBien.net?Subject=Customer%20Query">
+                <img class="contactus-icons" src="email.png" />
+              </a>
+              <a href="tel:+1-817-562-8591">
+                <img class="contactus-icons" src="phone.png" />
+              </a>
+              <a href="https://www.facebook.com/%C3%87a-Va-Bien-187131645335624/?modal=admin_todo_tour">
+                <img class="contactus-icons" src="facebooklogobw.png">
+</a>
+
+              <a href="https://www.instagram.com/cavabien6/">
+                <img class="contactus-icons" src="instagramlogobw.png">
+</a>
+              <br /><b>Address</b>: 5 Sackville St, Mayfair, London W1S 3FS, UK
+              <br /><b>Email</b>: customersupport@ÇaVaBien.net
+              <br /><b>Phone</b>: Call +1-817-562-8591 to speak to 24 hour Customer Service.
+
+            </p>
+          </div>
+
+
+        </div>
+</body>
+
+</html>
