@@ -1,0 +1,597 @@
+<title>Flights | Ça Va Bien Travel Agency</title>
+
+<html>
+
+<head>
+
+    <link rel="icon" type="image/gif/png" href="cvblogo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="ca va bien.css" />
+
+
+
+</head>
+
+<body>
+
+
+    <!-- navbar goes here -->
+    <div class="navbar">
+
+        <a class="logo" href="Home.html"><img src="cvblogo.png" style="width:80%"></a>
+
+
+        <a href="hotels.html">Hotels</a>
+        <a href="Flights.html">Flights</a>
+
+        <div class="dropdown">
+            <a href="Packages.html">Packages</a>
+
+            <button class="dropbtn">
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Packages.html#bestseller">Best Seller</a>
+                <a href="Packages.html#family">Family Friendly</a>
+                <a href="Packages.html#highadrenaline">High Adrenaline</a>
+                <a href="Packages.html#relaxed">Relaxed</a>
+                <a href="Packages.html#romantic">Romantic</a>
+                <a href="Packages.html#wilderness">Wilderness</a>
+                <a href="Packages.html#business">Business</a>
+            </div>
+
+        </div>
+
+        <div class="navbar-right">
+            <a href="About Us.html">About</a>
+            <div class="dropdown">
+                <a href="Contact Us.html">Contact Us</a>
+                <button class="dropbtn">
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Contact Us.html">Locate Us</a>
+                    <a href="mailto:customersupport@ÇaVaBien.net?Subject=Customer%20Query" target="_top">Email Us</a>
+                    <a href="tel:+1-817-562-8591">Call Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar ends here -->
+
+    <br><br />
+
+    <div class="wallpaper-container">
+        <img class="wallpaper" src="wallpaper.jpg" style="width:100%">
+        <div class="centered">
+            <h2><b>Flights</b></h2>
+            Home &#8594 Flights<br />
+        </div>
+
+
+    </div>
+
+
+
+    <br /><br />
+    <!-- our search bar begins here -->
+    <center>
+    <div class="searchbar">
+    <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Flight')" id="defaultOpen">Flights</button>
+    <button class="tablinks" onclick="openCity(event, 'Hotel')">Hotels</button>
+    <button class="tablinks" onclick="openCity(event, 'Packages')">Packages</button>
+    </div>
+    
+    <div id="Flight" class="tabcontent">
+    
+    <!-- Search Bar for "Flights"-->
+    <div class="search-container">
+    From <br>
+    <form action="action.php" method="post"target="_blank">
+    
+    <select name=id="startlocation">
+    <option value="NIL">Select a location</option>
+    <option value="AUSTRALIA">Australia</option>
+    <option value="SINGAPORE">Singapore</option>
+    <option value="NEW YORK">New York</option>
+    <option value="PARIS">France, Paris</option>
+    <option value="THAILAND">Thailand</option>
+    <option value="MALAYSIA">Malaysia</option>
+    <option value="CHINA">China</option>
+    <option value="JAPAN">Japan</option>
+    
+    
+    </select>
+    
+    <br>
+    
+    
+    <br>
+    To<br>
+    
+    <input type="text" value="LONDON" name=id="endlocation">
+    
+    <br>
+    <br>
+    
+    Start Date<br>
+    
+    <input type="date" placeholder="Search.." name=id="startdate">
+    
+    
+    <br><br>
+    
+    Return Date <br>
+    
+    <input type="date" placeholder="Search.." name=id="enddate">
+    
+    
+    
+    <br /><br>
+    
+    <input class="searchnow" type="submit">
+    </form>
+    
+    </div>
+    
+    </div>
+    
+    <div id="Hotel" class="tabcontent">
+    
+    <div class="search-container">
+    
+    
+    Hotel <Br>
+    <form action="/action_page.php">
+    <select name=id="hotel">
+    <option value="NIL">Select a hotel</option>
+    <option value="1">The Portobello Hotel</option>
+    <option value="2">St Martins Lane London Hotel</option>
+    <option value="3">La Suite West - Hyde Par</option>
+    <option value="4">Mercure London Kensington Hotel</option>
+    <option value="5">Ace Hotel London Shoreditch</option>
+    <option value="6">The Waldorf Hilton London</option>
+    <option value="7">Smart Hyde Park Inn Hostel/option>
+    <option value="8">London Elizabeth Hotel </option>
+    <option value="9">Park Grand Paddington Court</option>
+    <option value="10">Radisson Blu Edwardian Vanderbilt</option>
+    
+    </select>
+    
+    
+    <br><br>
+    Start Date <br>
+    
+    <input type="date" placeholder="Search.." name="search">
+    
+    <br><br>
+    Return Date <br>
+    
+    <input type="date" placeholder="Search.." name="search">
+    
+    <br><br>
+    <input class="searchnow" type="submit">
+    </form>
+    </div>
+    </div>
+    
+    <div id="Packages" class="tabcontent">
+    
+    <div class="search-container">
+    Package Type <br>
+    <form action="/action_page.php">
+    <select name=id="packagetype">
+    <option value="NIL">Select a package type</option>
+    <option value="best">Best Seller</option>
+    <option value="fam">Family Friendly</option>
+    <option value="high">High Adrenaline</option>
+    <option value="rel">Relaxed</option>
+    <option value="rom">Romantic</option>
+    <option value="wild">Wilderness</option>
+    <option value="biz">Business</option>
+
+    
+    
+    </select>
+    
+    <br><br>
+    
+
+    
+    Start Date <Br>
+    
+    <input type="date" placeholder="Search.." name="search">
+    
+    
+    <br><br>
+    Return Date <br>
+    
+    <input type="date" placeholder="Search.." name="search">
+    
+    </form>
+    <br />
+    <input class="searchnow" type="submit">
+    </div>
+    
+    </div>
+    
+    <script>
+    
+    
+    function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+        
+        document.getElementById("defaultOpen").click();
+        </script>
+        
+        </div>
+        </center>
+        <!-- our search bar ends here -->
+        
+        
+    <br /><br />
+
+    <div>
+        <center>
+            <h2>Where are you flying in from?</h2>
+        </center>
+
+        <div class="row">
+
+
+            <div class="column">
+                <center>
+                    <b>New York</b><br />
+
+                    <img src="newyork.jpg" alt="New york" class="image" style="width:100%"><br />
+
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+
+
+                    </div>
+
+                </center>
+            </div>
+
+
+            <div class="column">
+                <center>
+                    <b>Singapore</b><br />
+
+                    <img src="singapore.jpg" alt="Singapore" class="image" style="width:100%">
+                    <br />
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+                    </div>
+                </center>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+
+            <div class="column">
+                <center>
+                    <b>Chicago</b><br />
+
+                    <img src="chicago.jpg" alt="Chicago" class="image" style="width:100%">
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+                    </div>
+                </center>
+
+            </div>
+
+
+            <div class="column">
+                <center>
+                    <b>Tokyo</b><br />
+
+                    <img src="tokyo.jpg" alt="Forest" class="image" style="width:100%">
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+
+
+                    </div>
+                </center>
+            </div>
+
+        </div>
+<br>
+        <div class="row">
+
+
+            <div class="column">
+                <center>
+                    <b>Los Angeles</b><br />
+
+                    <img src="losangeles.jpg" alt="Los Angeles" class="image" style="width:100%">
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+                    </div>
+                </center>
+
+            </div>
+
+
+            <div class="column">
+                <center>
+                    <b>Paris</b><br />
+
+                    <img src="paris.jpg" alt="Paris" class="image" style="width:100%">
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+
+
+                    </div>
+                </center>
+            </div>
+
+        </div>
+<br>
+        <div class="row">
+
+
+            <div class="column">
+                <center>
+                    <b>Shanghai</b><br />
+
+                    <img src="shanghai.jpg" alt="Shanghai" class="image" style="width:100%">
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+                    </div>
+                </center>
+
+            </div>
+
+
+            <div class="column">
+                <center>
+                    <b>Toronto</b><br />
+
+                    <img src="toronto.jpg" alt="Toronto" class="image" style="width:100%">
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+
+
+                    </div>
+                </center>
+            </div>
+
+        </div>
+<br>
+
+        <div class="row">
+
+
+            <div class="column">
+                <center>
+                    <b>Taipei</b><br />
+
+                    <img src="Taipei.jpg" alt="Taipei" class="image" style="width:100%">
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+                    </div>
+                </center>
+
+            </div>
+
+
+            <div class="column">
+                <center>
+                    <b>Sydney</b><br />
+
+                    <img src="sydney.jpg" alt="Sydney" class="image" style="width:100%">
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+
+
+                    </div>
+                </center>
+            </div>
+
+        </div>
+<br>
+
+        <div class="row">
+
+
+            <div class="column">
+                <center>
+                    <b>Incheon</b><br />
+
+                    <img src="incheon.jpg" alt="Incheon" class="image" style="width:100%">
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+                    </div>
+                </center>
+
+            </div>
+
+
+            <div class="column">
+                <center>
+                    <b>Beijing</b><br />
+
+                    <img src="Beijing.jpg" alt="Beijing" class="image" style="width:100%">
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+
+
+                    </div>
+                </center>
+            </div>
+
+        </div>
+<br>
+        <div class="row">
+
+
+            <div class="column">
+                <center>
+                    <b>Rome</b><br />
+
+                    <img src="Rome.jpg" alt="Rome" class="image" style="width:100%">
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+                    </div>
+                </center>
+
+            </div>
+
+
+            <div class="column">
+                <center>
+                    <b>Bangkok</b><br />
+
+                    <img src="Bangkok.jpg" alt="Bangkok" class="image" style="width:100%">
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+
+
+                    </div>
+                </center>
+            </div>
+
+        </div>
+<br>
+
+
+        <div class="row">
+
+
+            <div class="column">
+                <center>
+                    <b>Dubai</b><br />
+
+                    <img src="dubai.jpg" alt="Dubai" class="image" style="width:100%">
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+                    </div>
+                </center>
+
+            </div>
+
+
+            <div class="column">
+                <center>
+                    <b>Frankfurt</b><br />
+
+                    <img src="Frankfurt.jpg" alt="Frankfurt" class="image" style="width:100%">
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+
+
+                    </div>
+                </center>
+            </div>
+
+        </div>
+
+
+<br>
+        <div class="row">
+
+
+            <div class="column">
+                <center>
+                    <b>Hong Kong</b><br />
+
+                    <img src="hongkong.jpg" alt="Hong Kong" class="image" style="width:100%">
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+                    </div>
+                </center>
+
+            </div>
+
+
+            <div class="column">
+                <center>
+                    <b>Moscow</b><br />
+
+                    <img src="moscow.jpg" alt="Moscow" class="image" style="width:100%">
+
+                    <div class="middle">
+                        <div class="desc">Search for Flights</div>
+
+
+                    </div>
+                </center>
+            </div>
+
+        </div>
+
+        <br /><br />
+
+    </div>
+
+
+    <div class="about_container">
+
+        <div class="column">
+            <p>
+                <b>Why Travel With Us</b><br /><br />
+                With more than 60 years of travel experience, ÇaVaBien Travel is a well-experienced travel agency known for giving individuals an unique vacation for all people. We offer a wide range of packages including hand-selected hotels, one-of-a-kind tours and services.
+
+                We specialize in packages and tours in London, bringing people from all over the world to experience the wonders and greatness of this city.
+            </p>
+        </div>
+
+        <div class="column">
+            <p>
+                <b>Contact Us</b><br />
+                <br />
+                <a href="Contact Us.html"><img class="contactus-icons" src="address.png" /></a>
+                <a href="Contact Us.html"><img class="contactus-icons" src="email.png" /></a>
+                <a href="Contact Us.html"><img class="contactus-icons" src="phone.png" /></a>
+                <br /><b>Address</b>: 5 Sackville St, Mayfair, London W1S 3FS, UK
+                <br /><b>Email</b>: customersupport@ÇaVaBien.net
+                <br /><b>Phone</b>: Call +1-817-562-8591 to speak to 24 hour Customer Service.
+
+            </p>
+        </div>
+
+
+    </div>
+
+</body>
+
+
+
+</html>
